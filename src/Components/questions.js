@@ -80,6 +80,18 @@ function Questions() {
       return <textarea />;
     }
   };
+  const checkboxes = () => {
+    if (questiontype == "checkboxes") {
+      return (
+        <div>
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+          <label for="option1"> Option1</label>
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+          <label for="option2"> Option2</label>
+        </div>
+      );
+    }
+  };
   // const handleshortInput = (event) => {
   //   answer.append({id: uuidv4,fullanswer:event.target.value})
   // };
@@ -121,6 +133,7 @@ function Questions() {
           {Addoption()}
           {para()}
           {answer()}
+          {checkboxes()}
         </div>
       </div>
     </div>

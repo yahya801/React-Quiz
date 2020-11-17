@@ -37,7 +37,7 @@ function Container() {
                 <AiFillDelete />
               </IconContext.Provider>
             </button>
-            <button className="add" onClick={handleAdd}>
+            <button  disabled={question.length >= 10} className="add" onClick={handleAdd}>
               <IconContext.Provider value={{ size: "25px" }}>
                 <IoIosAdd />
               </IconContext.Provider>{" "}
